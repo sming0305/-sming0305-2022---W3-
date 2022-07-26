@@ -1,0 +1,771 @@
+/*------------*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-between {
+    justify-content: space-between;
+}
+
+.d-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.d-vertical-c {
+    align-items: center;
+}
+
+.h2-dark-style {
+    font-size: $font-size-12;
+    font-weight: bold;
+    color: $h2-title-dark;
+    text-align: center;
+}
+
+.h2-light-style {
+    font-size: $font-size-12;
+    font-weight: bold;
+    color: $h2-title-light;
+    text-align: center;
+}
+
+.h3-primany-red-style {
+    font-size: $font-size-12;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    color: $primany-red;
+    text-align: center;
+}
+
+.page-select-pd {
+    padding: 13.5px $padding-4;
+}
+
+/*------------*/
+
+.wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.assembly {
+    transition: all 0.9s;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0px 12px;
+}
+
+.banner {
+    background-image: url(../image/home-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 787px;
+
+    .container {
+        justify-content: flex-end;
+        height: 787px;
+        text-align: right;
+        color: $dark-red;
+
+        h1 {
+            font-size: $font-size-16;
+            font-weight: 700;
+            margin-bottom: $margin-baseLine;
+
+            span {
+                font-size: $font-size-9;
+            }
+        }
+
+        a {
+            display: block;
+            font-size: $font-size-5;
+            color: $link-color;
+            padding: $padding-1-p $padding-3;
+            width: fit-content;
+            background-color: $primany-red;
+
+            &:hover {
+                opacity: $link-hover;
+            }
+
+            &:active {
+                opacity: $link-active;
+                text-decoration: $link-line;
+            }
+        }
+
+        .buy {
+            justify-content: flex-end;
+            margin-bottom: $margin-8;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .banner {
+        background-image: url(../image/home-header-sm.png);
+        padding: 0px 25px;
+
+    }
+}
+
+@media(max-width: 670px) {
+    .banner {
+        height: 396px;
+        background-image: url(../image/home-header-sm.png);
+        background-size: cover;
+        padding: 0px 2px;
+
+        .container {
+            height: 396px;
+
+            h1 {
+                font-size: $font-size-6;
+                font-weight: 700;
+                margin-bottom: $margin-2;
+
+                span {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}
+
+.feature {
+    background-color: $primany-pink;
+    padding: $padding-20 0;
+
+
+    h2 {
+        margin-bottom: $margin-6;
+    }
+
+    img {
+        width: 100px;
+        display: block;
+        margin: 0 auto $margin-4;
+    }
+
+    h3 {
+        font-size: $font-size-6;
+        font-weight: bold;
+        color: $dark-red;
+        text-align: center;
+        margin-bottom: $margin-2;
+    }
+
+    li {
+        width: 24%;
+
+        &:not(:last-child) {
+            margin-right: $margin-6;
+        }
+    }
+}
+
+.classic-product {
+    padding: $padding-20 12px;
+
+    h2 {
+        margin-bottom: $margin-12;
+    }
+
+    li {
+        width: 31.5%;
+    }
+
+    img {
+        margin-bottom: $margin-2;
+        margin: 0 auto $margin-2;
+        display: block;
+    }
+
+    a {
+        &:hover {
+            opacity: $link-hover;
+        }
+
+        &:active {
+            opacity: $link-active;
+            text-decoration: $link-line;
+        }
+    }
+}
+
+@media(max-width:945px) {
+    .classic-product {
+        ul {
+            flex-wrap: wrap;
+
+            li {
+                width: 50%;
+            }
+
+            li:nth-child(1) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+@media(max-width:768px) {
+    .feature {
+        padding: $padding-20 $padding-6;
+
+        ul {
+            flex-wrap: wrap;
+
+            li {
+                width: 48.4%;
+                margin-bottom: $margin-9;
+
+                &:not(:last-child) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .classic-product {
+        ul {
+            width: 48.4%;
+            margin: 0 auto;
+
+            li {
+                width: 100%;
+
+                &:not(:last-child) {
+                    margin-bottom: $margin-6;
+                }
+            }
+
+        }
+    }
+}
+
+@media(max-width:620px) {
+    .feature {
+        h2 {
+            font-size: $font-size-6;
+        }
+
+        ul li {
+            width: 100%;
+        }
+    }
+
+    .classic-product {
+        padding: $padding-10 $padding-3-p;
+
+        ul {
+            width: 100%;
+        }
+
+        h2 {
+            font-size: $font-size-6;
+        }
+    }
+}
+
+.secondary-banner {
+    background-image: url(../image/index-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: $padding-20 0;
+
+    h2 {
+        padding: 0 0 $padding-12;
+    }
+
+    h3 {
+        padding: $padding-2 0;
+        background: $white;
+        text-align: center;
+    }
+}
+
+.comment {
+    padding: $padding-20 $padding-3;
+
+    h2 {
+        padding: 0 0 $padding-12;
+    }
+
+    li {
+        width: 23%;
+    }
+
+    h4 {
+        margin-bottom: $margin-2;
+    }
+
+    .comment-info {
+        padding: $padding-4;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 0 6px 3px $gary-02;
+        height: 205px;
+    }
+}
+
+@media(max-width:768px) {
+    .secondary-banner {
+        background-image: url(../image/index-bg-sm.png);
+        padding: $padding-20 $padding-6;
+
+        ul {
+            display: block;
+        }
+
+        li {
+            margin-bottom: $padding-6;
+        }
+    }
+
+    .comment {
+        padding: $padding-20 $padding-9;
+
+        h2 {
+            padding: 0 0 $padding-12;
+        }
+
+        ul {
+            flex-wrap: wrap;
+        }
+
+        li {
+            width: 48.4%;
+            margin-bottom: $margin-6;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .secondary-banner {
+        background-image: url(../image/index-bg-sm.png);
+        padding: $padding-10 2px;
+
+        h2 {
+            padding-bottom: $padding-6;
+            font-size: $font-size-6;
+        }
+    }
+
+    .comment {
+        padding: $padding-10 $padding-3-p;
+
+        h2 {
+            padding-bottom: $padding-6;
+            font-size: $font-size-6;
+        }
+
+        li {
+            width: 100%;
+            margin-bottom: $margin-4;
+        }
+    }
+}
+
+.contact-us {
+    background-color: $primany-pink;
+    padding: $padding-20 0;
+
+    h2 {
+        margin-bottom: $margin-12;
+    }
+
+    p {
+        font-size: $font-size-5;
+        margin-bottom: $margin-6;
+    }
+
+    .contact-us-info {
+        width: 49.1%;
+        margin: 0 auto;
+
+        input,
+        textarea {
+            width: 100%;
+            margin: $margin-2 0 $margin-4;
+            border: 1px solid $primany-black;
+            border-radius: 0;
+            background: $primany-pink;
+        }
+
+        textarea {
+            height: 136px;
+        }
+    }
+
+    form input:nth-last-child(3) {
+        width: auto;
+    }
+
+    button {
+        display: block;
+        margin: $margin-12 auto 0;
+        width: 70.5%;
+        height: 56px;
+        background: $primany-red;
+        color: $link-color;
+    }
+}
+
+@media(max-width:768px) {
+
+    .contact-us {
+        padding: $padding-20 $padding-21;
+
+        .contact-us-info {
+            width: 100%;
+        }
+
+        p {
+            font-size: $font-size-4;
+        }
+
+        button {
+
+            width: 58.4%;
+            height: 56px;
+
+        }
+    }
+}
+
+@media(max-width:485px) {
+
+    .contact-us {
+        padding: $padding-10 2px;
+
+        h2 {
+            font-size: $font-size-6;
+        }
+
+        .container button {
+            margin: $margin-6 auto 0;
+            width: 100%;
+            height: 56px;
+
+        }
+    }
+}
+
+.product-nav {
+    li {
+        width: 33.3333%;
+
+        a {
+            display: block;
+            color: $primany-black;
+            text-align: center;
+            font-size: $font-size-8;
+            padding: $padding-6 0 $padding-4;
+            border-bottom: 8px solid transparent;
+            border-left: 1px solid $gary-03;
+            border-right: 1px solid $gary-03;
+            border-top: 1px solid $gary-03;
+            margin-right: -1px;
+
+            &:hover {
+                border-bottom: 8px solid $primany-red;
+            }
+        }
+    }
+}
+
+.product-optical {
+
+    .banner-part1,
+    .banner-part2, 
+    .banner-part3, 
+    .banner-part4 {
+        background-image: url(../image/product-header-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 295px;
+        width: 50%;
+    }
+
+    .banner-part2 {
+        background-image: url(../image/product-header-2.png);
+    }
+    .banner-part3 {
+        background-image: url(../image/product-header-3.png);
+    }
+    .banner-part4 {
+        background-image: url(../image/product-header-4.png);
+    }
+}
+
+.product-optical-list,.product-SUNGLASSES-list {
+    padding: $padding-20 $padding-3;
+
+    h2 {
+        font-size: $font-size-9;
+        margin-bottom: $margin-8;
+        text-align: center;
+
+        span {
+            font-size: $font-size-10-p;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+        }
+    }
+
+    ul {
+        flex-wrap: wrap;
+
+        li {
+            width: 23.6%;
+            margin-bottom: $margin-20;
+        }
+
+        h4,
+        span {
+            font-size: $font-size-6;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        span {
+            color: $primany-red;
+        }
+    }
+
+    .product-optical-color {
+        display: flex;
+
+        span:nth-child(1),
+        span:nth-child(2) {
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-color: $product-optical-color-1;
+            margin-right: $margin-2;
+            border-radius: 5px;
+        }
+
+        span:nth-child(2) {
+            background-color: $product-optical-color-2;
+        }
+    }
+
+    .page-select {
+        width: fit-content;
+        margin: 0 auto;
+
+        li {
+            width: auto;
+            margin: 0;
+
+            &:nth-child(1) a,
+            &:nth-child(7) a {
+                padding: 13.5px $padding-3;
+            }
+
+
+            a {
+                display: block;
+                color: $page-select;
+                border: 1px solid $primany-black;
+                margin-right: -1px;
+
+                &:hover {
+                    background: #000;
+                    color: $link-color;
+                }
+            }
+
+            .page-select-next:hover {
+                background-color: $gary-01;
+                color: $primany-black;
+            }
+
+        }
+    }
+}
+
+.product-SUNGLASSES-list{
+    ul{
+        li{
+            width: 32.1%;
+        }
+    }
+}
+
+@media(max-width:960px) {
+
+    .product-nav {
+        padding: 0;
+
+        li {
+            a {
+                font-size: $font-size-6;
+                padding: $padding-4 0;
+            }
+        }
+    }
+
+    .product-optical {
+        .banner-part1,.banner-part2 ,.banner-part3 , .banner-part4 {
+            background-image: url(../image/product-header-sm-1.png);
+            height: 272px;
+        }
+
+        .banner-part2 {
+            background-image: url(../image/product-header-sm-2-cut.png);
+        }
+        .banner-part3 {
+            background-image: url(../image/product-header-sm-3.png);
+        }
+        .banner-part4{
+            background-image: url(../image/product-header-sm-4.png);
+        }
+    }
+
+    .product-optical-list, .product-SUNGLASSES-list {
+        padding: $padding-20 $padding-9;
+
+        h2 {
+
+            font-size: $font-size-9;
+        }
+
+        ul {
+
+            li {
+                width: 48.3%;
+                margin-bottom: $margin-10;
+            }
+
+        }
+
+        .page-select {
+            margin: $margin-10 auto 0;
+
+            li {
+
+                &:nth-child(1) a,
+                &:nth-child(7) a {
+                    font-size: 19px;
+                    padding: 11px $padding-3;
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width:530px) {
+
+    .product-nav {
+        li {
+
+            a {
+                font-size: $font-size-4;
+            }
+        }
+    }
+
+    .product-optical{
+
+        .banner-part1,
+        .banner-part2, 
+        .banner-part3, 
+        .banner-part4 {
+            height: 136px;
+        }
+    }
+
+    .product-optical-list, .product-SUNGLASSES-list {
+        padding: $padding-10 13px;
+
+        h2 {
+            font-size: $font-size-6;
+
+            span {
+                font-size: $font-size-6;
+            }
+
+            margin-bottom: $margin-6;
+        }
+
+        ul {
+
+            li {
+                width: 100%;
+                margin-bottom: $margin-6;
+            }
+
+        }
+
+        .page-select {
+            margin: $margin-10 auto 0;
+
+            li {
+
+                &:nth-child(1) a,
+                &:nth-child(7) a {
+                    font-size: 16px;
+                    padding: 11px 11px;
+                }
+            }
+
+            .page-select-pd {
+                padding: 11px 12px;
+            }
+        }
+    }
+}
+
+@media(max-width: 345px) {
+
+    .product-nav {
+        li {
+
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+    .product-optical-list,  .product-SUNGLASSES-list{
+        .page-select {
+            .mini-none {
+                display: none;
+            }
+        }
+    }
+}
