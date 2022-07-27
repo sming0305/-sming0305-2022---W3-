@@ -9,7 +9,9 @@ $brown:#5F3E2D;
 $gary-01:#F2F2F2;
 $gary-02:#DEE2E6;
 $gary-03:#DCDCDC;
-$gary-04:#555555;
+$gary-04:#CED4DA;
+$gary-05:#555555;
+$gary-06:#495057;
 
 /*primany-color*/
 $primany-red : #AA0601;
@@ -21,13 +23,16 @@ $h2-title-dark: $dark-red;
 $h2-title-light: $white;
 $product-optical-color-1:$brown;
 $product-optical-color-2:$dark-orange;
-$page-select: $gary-04;
+$page-select: $gary-05;
+$store-text-dark:#212529;
 
 /*block-color*/
 $header-color: $primany-red;
 
-/*link-color*/
+/*link & select -color*/
 $link-color: $white;
+$select-color: $gary-06;
+$select-border-color: $gary-04;
 $link-border-color: $white;
 $link-hover: 0.8;
 $link-active: 1;
@@ -42,6 +47,7 @@ $font-size-2: $font-size-baseLine*2;
 $font-size-3: $font-size-baseLine*3;
 $font-size-3-p: $font-size-baseLine*3.5;
 $font-size-4: $font-size-baseLine*4;
+$font-size-4-p: $font-size-baseLine*4.5;
 $font-size-5: $font-size-baseLine*5;
 $font-size-6: $font-size-baseLine*6;
 $font-size-7: $font-size-baseLine*7;
@@ -71,6 +77,7 @@ $padding-3-p: $padding-baseLine*3.5;
 $padding-4: $padding-baseLine*4;
 $padding-5: $padding-baseLine*5;
 $padding-6: $padding-baseLine*6;
+$padding-6-p: $padding-baseLine*6.5;
 $padding-7: $padding-baseLine*7;
 $padding-8: $padding-baseLine*8;
 $padding-9: $padding-baseLine*9;
@@ -87,6 +94,8 @@ $padding-19: $padding-baseLine*19;
 $padding-20: $padding-baseLine*20;
 $padding-21: $padding-baseLine*21;
 $padding-22: $padding-baseLine*22;
+$padding-23: $padding-baseLine*23;
+$padding-24: $padding-baseLine*24;
 /*------padding------*/
 
 /*------margin------*/
