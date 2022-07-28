@@ -1,0 +1,304 @@
+.product-nav {
+    li {
+        width: 33.3333%;
+
+        a {
+            display: block;
+            color: $primany-black;
+            text-align: center;
+            font-size: $font-size-8;
+            padding: $padding-6 0 $padding-4;
+            border-bottom: 8px solid transparent;
+            border-left: 1px solid $gary-03;
+            border-right: 1px solid $gary-03;
+            border-top: 1px solid $gary-03;
+            margin-right: -1px;
+
+            &:hover {
+                border-bottom: 8px solid $primany-red;
+            }
+        }
+    }
+}
+
+.product-optical {
+
+    .banner-part1,
+    .banner-part2,
+    .banner-part3,
+    .banner-part4 {
+        background-image: url(../image/product-header-1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 295px;
+        width: 50%;
+    }
+
+    .banner-part2 {
+        background-image: url(../image/product-header-2.png);
+    }
+
+    .banner-part3 {
+        background-image: url(../image/product-header-3.png);
+    }
+
+    .banner-part4 {
+        background-image: url(../image/product-header-4.png);
+    }
+}
+
+.product-optical-list,
+.product-SUNGLASSES-list,
+.page-select-common {
+    padding: $padding-20 $padding-3;
+
+    h1 {
+        font-size: $font-size-9;
+        margin-bottom: $margin-8;
+        text-align: center;
+
+        span {
+            font-size: $font-size-10-p;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+        }
+    }
+
+    ul {
+        flex-wrap: wrap;
+
+        li {
+            width: 23.6%;
+            margin-bottom: $margin-20;
+        }
+
+        h4,
+        span {
+            font-size: $font-size-6;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        span {
+            color: $primany-red;
+        }
+    }
+
+    .product-optical-color {
+        display: flex;
+
+        span:nth-child(1),
+        span:nth-child(2) {
+            display: block;
+            width: 24px;
+            height: 24px;
+            background-color: $product-optical-color-1;
+            margin-right: $margin-2;
+            border-radius: 5px;
+        }
+
+        span:nth-child(2) {
+            background-color: $product-optical-color-2;
+        }
+    }
+
+    .page-select {
+        width: fit-content;
+        margin: 0 auto;
+
+        li {
+            width: auto;
+            margin: 0;
+
+            &:nth-child(1) a,
+            &:nth-child(7) a {
+                padding: 13.5px $padding-3;
+            }
+
+
+            a {
+                display: block;
+                color: $page-select;
+                border: 1px solid $primany-black;
+                margin-right: -1px;
+                width: auto;
+
+                &:hover {
+                    background: #000;
+                    color: $link-color;
+                }
+            }
+
+            .page-select-next:hover {
+                background-color: $gary-01;
+                color: $primany-black;
+            }
+
+        }
+    }
+}
+
+.product-SUNGLASSES-list {
+    ul {
+        li {
+            width: 32.1%;
+        }
+    }
+}
+
+@media(max-width:960px) {
+
+    .product-nav {
+        padding: 0;
+
+        li {
+            a {
+                font-size: $font-size-6;
+                padding: $padding-4 0;
+            }
+        }
+    }
+
+    .product-optical {
+
+        .banner-part1,
+        .banner-part2,
+        .banner-part3,
+        .banner-part4 {
+            background-image: url(../image/product-header-sm-1.png);
+            height: 272px;
+        }
+
+        .banner-part2 {
+            background-image: url(../image/product-header-sm-2-cut.png);
+        }
+
+        .banner-part3 {
+            background-image: url(../image/product-header-sm-3.png);
+        }
+
+        .banner-part4 {
+            background-image: url(../image/product-header-sm-4.png);
+        }
+    }
+
+    .product-optical-list,
+    .product-SUNGLASSES-list,
+    .page-select-common {
+        padding: $padding-20 $padding-9;
+
+        h1 {
+
+            font-size: $font-size-9;
+        }
+
+        ul {
+
+            li {
+                width: 48.3%;
+                margin-bottom: $margin-10;
+            }
+
+        }
+
+        .page-select {
+            margin: $margin-10 auto 0;
+
+            li {
+
+                &:nth-child(1) a,
+                &:nth-child(7) a {
+                    font-size: 19px;
+                    padding: 11px $padding-3;
+                }
+
+            }
+        }
+    }
+}
+
+@media(max-width:530px) {
+
+    .product-nav {
+        li {
+
+            a {
+                font-size: $font-size-4;
+            }
+        }
+    }
+
+    .product-optical {
+
+        .banner-part1,
+        .banner-part2,
+        .banner-part3,
+        .banner-part4 {
+            height: 136px;
+        }
+    }
+
+    .product-optical-list,
+    .product-SUNGLASSES-list,
+    .page-select-common {
+        padding: $padding-10 13px;
+
+        h1 {
+            font-size: $font-size-6;
+
+            span {
+                font-size: $font-size-6;
+            }
+
+            margin-bottom: $margin-6;
+        }
+
+        ul {
+
+            li {
+                width: 100%;
+                margin-bottom: $margin-6;
+            }
+
+        }
+
+        .page-select {
+            margin: $margin-10 auto 0;
+
+            li {
+
+                &:nth-child(1) a,
+                &:nth-child(7) a {
+                    font-size: 16px;
+                    padding: 11px 11px;
+                }
+            }
+
+            .page-select-pd {
+                padding: 11px 12px;
+            }
+        }
+    }
+}
+
+@media(max-width: 345px) {
+
+    .product-nav {
+        li {
+
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .product-optical-list,
+    .product-SUNGLASSES-list,
+    .page-select-common {
+        .page-select {
+            .mini-none {
+                display: none;
+            }
+        }
+    }
+}

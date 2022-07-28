@@ -1,0 +1,111 @@
+.store-base-detal-info {
+    align-items: flex-start;
+
+    >li:nth-child(1) {
+        width: 40.6%;
+        margin: 0;
+
+        >ul {
+            padding: $padding-2 0 0;
+        }
+
+        ul li:nth-of-type(2) {
+            padding: 0 $padding-6;
+        }
+
+        h2 {
+            padding: 0 $padding-6 $padding-2;
+            font-size: $font-size-6;
+            margin-bottom: $margin-4;
+
+            a {
+                margin: 0;
+            }
+        }
+
+        img {
+            object-fit: cover;
+            width: 526px;
+            height: 224px;
+
+        }
+    }
+
+    >li:nth-child(2) {
+        width: 57.7%;
+        margin: 0;
+        border: none;
+
+        img {
+            object-fit: cover;
+            height: 414px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .store-base {
+        .store-base-detal-info {
+            display: block;
+
+            >li:nth-child(1) {
+                display: flex;
+                align-items: flex-start;
+                width: 100%;
+                margin-bottom: $margin-6;
+                border: none;
+
+                >ul {
+                    border: 1px solid #DEDEDE;
+                    padding: $padding-2 0;
+                    margin-left: $margin-6;
+                    width: 75.4%;
+                }
+
+                ul li:nth-of-type(2) {
+                    padding: 0 $padding-6;
+                }
+
+                h2 {
+                    padding: 0 $padding-6 $padding-2;
+                    font-size: $font-size-6;
+                    margin-bottom: $margin-4;
+                }
+
+                >a {
+                    width: 75%;
+                }
+
+                img {
+                    object-fit: fill;
+                    width: 100%;
+                }
+            }
+
+            >li:nth-child(2) {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 640px) {
+    .store-base {
+        .store-base-detal-info {
+            >li:nth-child(1) {
+                display: block;
+                width: 100%;
+
+                >ul {
+                    width: 100%;
+                    margin: 0;
+                }
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.QA-page {
+    padding: $padding-24 $padding-3 $padding-20;
+
+    h1 {
+        a {
+            color: $primany-black;
+        }
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: $font-size-6;
+        margin-bottom: $margin-8;
+    }
+
+    ul {
+        width: 66.4%;
+    }
+
+    li:not(:last-child) {
+        margin-bottom: $margin-8;
+    }
+
+    h3 {
+        font-size: $font-size-5;
+        font-weight: bold;
+        margin-bottom: $margin-2;
+    }
+}
+
+@media(max-width:768px) {
+    .QA-page {
+        padding: $padding-20 $padding-9 $padding-20;
+
+        ul {
+            width: 100%;
+        }
+    }
+}
+
+
+@media(max-width:375px) {
+    .QA-page {
+        padding: $padding-10 $padding-3-p $padding-16;
+
+        h1 {
+            font-size: $font-size-6;
+            margin-bottom: $margin-6;
+        }
+
+        h2 {
+            margin-bottom: $margin-6;
+        }
+    }
+}
