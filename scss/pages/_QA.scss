@@ -1,5 +1,6 @@
 .QA-page {
-    padding: $padding-24 $padding-3 $padding-20;
+    padding-top: $padding-24;
+    padding-bottom: $padding-20;
 
     h1 {
         a {
@@ -30,7 +31,8 @@
 
 @media(max-width:768px) {
     .QA-page {
-        padding: $padding-20 $padding-9 $padding-20;
+        padding-top: $padding-20;
+        padding-bottom: $padding-20;
 
         ul {
             width: 100%;
@@ -41,7 +43,8 @@
 
 @media(max-width:375px) {
     .QA-page {
-        padding: $padding-10 $padding-3-p $padding-16;
+        padding-top: $padding-10;
+        padding-bottom: $padding-16;
 
         h1 {
             font-size: $font-size-6;

@@ -12,7 +12,7 @@
         text-align: right;
         color: $dark-red;
 
-        h1 {
+        h2 {
             font-size: $font-size-16;
             font-weight: 700;
             margin-bottom: $margin-baseLine;
@@ -50,8 +50,6 @@
 @media(max-width: 768px) {
     .banner {
         background-image: url(../image/home-header-sm.png);
-        padding: 0px 25px;
-
     }
 }
 
@@ -60,12 +58,11 @@
         height: 396px;
         background-image: url(../image/home-header-sm.png);
         background-size: cover;
-        padding: 0px 2px;
 
         .container {
             height: 396px;
 
-            h1 {
+            h2 {
                 font-size: $font-size-6;
                 font-weight: 700;
                 margin-bottom: $margin-2;
@@ -158,7 +155,7 @@
 
 @media(max-width:768px) {
     .feature {
-        padding: $padding-20 $padding-6;
+        padding: $padding-20 0;
 
         ul {
             flex-wrap: wrap;
@@ -261,7 +258,7 @@
 @media(max-width:768px) {
     .secondary-banner {
         background-image: url(../image/index-bg-sm.png);
-        padding: $padding-20 $padding-6;
+        padding: $padding-20 0;
 
         ul {
             display: block;
@@ -290,17 +287,17 @@
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 520px) {
     .secondary-banner {
         background-image: url(../image/index-bg-sm.png);
-        padding: $padding-10 2px;
+        padding: $padding-10 0;
 
         h2 {
             padding-bottom: $padding-6;
             font-size: $font-size-6;
         }
     }
-
+    // 「顧客推薦」區塊會建議提早變更為單欄式排版，不然像是 iphone pro max 手機的解析度為 414px 就會顯得有點擁擠。
     .comment {
         padding: $padding-10 $padding-3-p;
 
@@ -349,6 +346,11 @@
 
     form input:nth-last-child(3) {
         width: auto;
+        margin-right: $margin-baseLine;
+    }
+
+    form label:nth-last-child(2) {
+        display: inline-block;
     }
 
     button {
@@ -386,7 +388,7 @@
 @media(max-width:485px) {
 
     .contact-us {
-        padding: $padding-10 2px;
+        padding: $padding-10 0;
 
         h2 {
             font-size: $font-size-6;

@@ -29,9 +29,10 @@
         <div class="assembly">
             <div class="header">
                 <div class="container d-flex d-between">
-                    <h2>
+                    <!-- 以 SEO 來看的話，Logo 上面的「GINS眼鏡電商」其實會寫成 h1 會比較好，因為在搜尋的時候一定會搜尋網站的名稱，而非標題的名稱。（ 標題名稱則會改為 h2 ） -->
+                    <h1>
                         <a href="index.html">GINS眼鏡電商</a>
-                    </h2>
+                    </h1>
                     <ul class="d-flex">
                         <li><a href="product-Celluloid Combi.html">系列鏡框</a></li>
                         <li><a href="store-base.html">門市據點</a></li>
@@ -46,7 +47,8 @@
             <div class="banner">
                 <div class="container d-flex d-vertical-c">
                     <div>
-                        <h1><span>Promise-Desert 2020 早春系列</span><br>看得清，才能看得遠</h1>
+                        <!-- 以 SEO 來看的話，Logo 上面的「GINS眼鏡電商」其實會寫成 h1 會比較好，因為在搜尋的時候一定會搜尋網站的名稱，而非標題的名稱。（ 標題名稱則會改為 h2 ） -->
+                        <h2><span>Promise-Desert 2020 早春系列</span><br>看得清，才能看得遠</h2>
                         <div class="buy d-flex "><a href="product-2020 NEW COLLECTION.html">立即購買</a></div>
                     </div>
                 </div>
@@ -165,15 +167,15 @@
                         <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
                         <form action="index.html" class="pure-form pure-form-stacked">
                             <label for="name">姓名</label>
-                            <input type="text" id="name" placeholder="您的大名..." required>
+                            <input type="text" id="name" name="name" placeholder="您的大名..." required>
                             <label for="phone">聯絡電話</label>
-                            <input type="number" id="phone" placeholder="您的手機號碼..." required>
+                            <input type="number" id="phone" name="phoneNumber" placeholder="您的手機號碼..." required>
                             <label for="mail">電子郵件</label>
-                            <input type="email" id="mail" placeholder="您的email..." required>
+                            <input type="email" id="mail" name="mailAdress" placeholder="您的email..." required>
                             <label for="compare">意見反應</label>
                             <textarea name="compare" id="compare" placeholder="請輸入您的意見"></textarea>
-                            <input type="checkbox" id="agree" required>
-                            <label id="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+                            <input type="checkbox" id="agree" name="terms" required>
+                            <label for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
                             <button type="submit" class="pure-button pure-button-primary">確認送出</button>
                         </form>
                     </div>

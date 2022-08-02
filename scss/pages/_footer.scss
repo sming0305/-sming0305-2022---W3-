@@ -76,9 +76,11 @@
     }
 }
 
+
+
 @media(max-width:710px) {
     .footer {
-        padding: $padding-6 2px;
+        padding: $padding-6 0px;
 
         .subnav {
             display: none;

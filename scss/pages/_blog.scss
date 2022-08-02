@@ -29,7 +29,8 @@
 }
 
 .blog {
-    padding: $padding-24 $padding-3 $padding-20;
+    padding-top: $padding-24;
+    padding-bottom: $padding-20;
 
     ul li {
         margin-bottom: $margin-15;
@@ -89,7 +90,8 @@
     }
 
     .blog {
-        padding: $padding-20 $padding-9;
+        padding-top: $padding-20;
+        padding-bottom: $padding-20;
 
         h1 {
             margin-bottom: $margin-10;
@@ -165,7 +167,8 @@
     }
 
     .blog {
-        padding: $padding-10 $padding-3-p;
+        padding-top: $padding-10;
+        padding-bottom: $padding-10;
 
 
         ul li {

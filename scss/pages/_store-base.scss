@@ -1,5 +1,6 @@
 .store-base {
-    padding: $padding-24 $padding-3 $padding-20;
+    padding-top: $padding-24;
+    padding-bottom: $padding-20;
 
     h1 {
         a {
@@ -105,7 +106,6 @@
 
 @media(max-width:905px) {
     .store-base {
-        padding: $padding-20 $padding-9 $padding-20;
 
         .store-list {
             justify-content: space-between;
@@ -120,7 +120,8 @@
 
 @media(max-width:680px) {
     .store-base {
-        padding: $padding-10 $padding-3-p $padding-16;
+        padding-top: $padding-10;
+        padding-bottom: $padding-16;
 
         h1 {
             font-size: $font-size-6;
